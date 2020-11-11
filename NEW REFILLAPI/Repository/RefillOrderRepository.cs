@@ -75,7 +75,7 @@ namespace RefillApi.Repository
 
                     
                     var content = new StringContent(JsonConvert.SerializeObject("hello"), Encoding.UTF8, "application/json");
-                    var request = new HttpRequestMessage(HttpMethod.Post, "http://20.42.35.247/api/DrugsApi/getDispatchableDrugStock/" + DrugId + "/" + Location)
+                    var request = new HttpRequestMessage(HttpMethod.Post, "http://40.88.218.207/api/DrugsApi/getDispatchableDrugStock/" + DrugId + "/" + Location)
                 {
                         Content = content
                     };
